@@ -1,0 +1,111 @@
+* {
+    background: #324247;
+
+}
+
+body {
+    height: 9000px;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-family: color basic;
+    text-decoration: none;
+    background: #cfa093;
+    height: 30px;
+
+}
+
+.link {
+    color: #476066;
+    text-decoration: none;
+    background: #cfa093;
+}
+
+.link:hover {
+    color: #51154d;
+
+}
+
+.bgheader {
+    margin-bottom: -0.4%;
+    height: 130px;
+    width: 100%;
+}
+
+#logo {
+    position: absolute;
+    font-family: color basic;
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    margin-bottom: -4%;
+    margin-top: -5%;
+    top: 70%;
+    background: none;
+}
+
+#innerHeader {
+    position: relative;
+}
+
+.totalHeader {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+}
+
+/* BODY ------------------------------------------------------------*/
+
+#map {
+    margin-top: 15%;
+    width: 100%;
+    height: 100%;
+}
+
+/* This whole link section and body text section is a fucking mess lmao, fix it when possible*/
+/*literally everything beneath these comments are garbage and just serve as placeholders*/
+.bodyTextLink {
+    font-family: consolas;
+    color: white;
+
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 3%;
+    z-index: 0;
+    text-decoration: none;
+}
+
+.bodyTextLink:hover {
+    color: #cfa093;
+}
+
+.bodyText {
+    font-family: consolas;
+    color: white;
+
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 2%;
+    z-index: 0;
+}
+
+#link1 {
+    margin-top: 20%;
+}
+
+#link2 {
+    margin-top: 25%;
+}
+
+#confusedCat {
+    position: absolute;
+    z-index: 0;
+    margin-top: 20%;
+    margin-left: 40%;
+}
