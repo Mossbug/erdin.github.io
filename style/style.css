@@ -109,3 +109,8 @@ body {
     margin-top: 20%;
     margin-left: 40%;
 }
+
+@font-face{
+    font-family: 'color basic';
+    src: url(style/color basic.ttf);
+}
