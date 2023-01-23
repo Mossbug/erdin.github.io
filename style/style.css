@@ -1,0 +1,379 @@
+* {
+    background: #324247;
+    cursor: url('images/cursorNormal.png'), auto;
+}
+
+
+@font-face {
+    font-family: 'colorbasics';
+    src: url(colorbasic.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url(Roboto-Thin.ttf);
+}
+
+body {
+    height: 9000px;
+    margin: 0;
+
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-family: colorbasics;
+    text-decoration: none;
+    background: #df866e;
+    height: 30px;
+    z-index: 2;
+
+}
+
+.navShader {
+    position: fixed;
+    margin-top: 8%;
+    left: -2%;
+    width: 120%;
+    height: 7%;
+    background: #242d30;
+    transform-origin: left;
+    z-index: 2;
+    filter: blur(10px);
+}
+
+.link {
+    color: #222e31;
+    text-decoration: none;
+    background: #df866e;
+}
+
+.link:hover {
+    color: #227a90;
+    background: #ffffff;
+
+}
+
+.bgheader {
+    margin-bottom: -0.4%;
+    height: 130px;
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    font-family: colorbasics;
+    color: #e9b6a8;
+    font-size: 50px;
+    margin-bottom: -4%;
+    margin-top: -2%;
+    top: 70%;
+    background: none;
+}
+
+#innerHeader {
+    position: relative;
+}
+
+.totalHeader {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+
+
+}
+
+
+.sidebarClick {
+    background: none;
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    height: 40px;
+    width: 40px;
+}
+
+/* BODY ------------------------------------------------------------*/
+
+#map {
+    margin-top: 15%;
+    width: 100%;
+    height: 100%;
+}
+
+#mainBody {
+    position: absolute;
+    margin-top: 15%;
+    z-index: 0;
+}
+
+.bodyTextLink {
+    font-family: Roboto-Thin;
+    color: white;
+    text-decoration: none;
+}
+
+.bodyTextLink:hover {
+    color: #cfa093;
+}
+
+.bodyText {
+    font-family: Roboto-Thin;
+    color: white;
+    margin: 2%;
+    text-align: center;
+}
+
+#confusedCat {
+    margin-left: 40%;
+}
+
+.glossaryBox {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+
+
+
+
+}
+
+.ATGlossaryChoice {
+    transition: transform 500ms ease;
+    background: none;
+    margin-left: 5%;
+}
+
+.ATGlossaryChoice:hover {
+    background: none;
+    transform: scale(1.07);
+}
+
+.glossaryImage {
+
+    width: 75%;
+    height: 75%;
+}
+
+.gone {
+    display: none;
+}
+
+
+/* If mobile screen --------------*/
+
+#sidebar {
+    background: white;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    width: 70%;
+    right: -70%;
+    top: 90px;
+
+    transition: transform 0.4s,
+
+}
+
+.openedSidebar {
+    right: 0px;
+    transform: translateX(-80%);
+}
+
+.sidebarText {
+    background: white;
+    font-family: Roboto-Thin;
+    font-size: 200%;
+    color: #324247;
+    margin-left: 10%;
+    margin-top: 15%;
+    text-decoration: none;
+}
+
+.sidebarText:hover {
+    color: #df866e;
+}
+
+.sidebarLine {
+    width: 90%;
+    margin-top: 10%;
+}
+
+
+@media only screen and (min-width: 700px) {
+    .sidebarClick {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    #mainBody {
+        margin-top: 20%;
+    }
+
+
+    .logo {
+        font-size: 40px;
+
+        /*margin-top: -10%;*/
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .logo {
+        font-size: 40px;
+        margin-top: -3%;
+
+        /*margin-top: -10%;*/
+    }
+
+
+    #mainBody {
+        margin-top: 25%;
+    }
+
+    .glossaryBox {
+        display: block;
+        margin: 20%;
+    }
+
+    .ATGlossaryChoice {
+        margin: 10%;
+    }
+
+
+    .glossaryImage {
+
+        width: 75%;
+        height: 75%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    #mainBody {
+        margin-top: 25%;
+    }
+
+    #atLogo {
+        margin-top: -3%;
+    }
+
+    #innerHeader {
+        height: 70px;
+    }
+
+    .link {
+        display: none;
+    }
+
+    .navbar {
+        height: 20px;
+    }
+
+    .bgheader {
+        height: 90px;
+    }
+
+    .glossaryBox {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 628px) {
+
+    #mainBody {
+        margin-top: 25%;
+    }
+
+    #atLogo {
+        margin-top: -9%;
+
+    }
+
+    .link {
+        display: none;
+    }
+
+    .navbar {
+        height: 20px;
+    }
+
+    .bgheader {
+        height: 90px;
+    }
+
+    .glossaryBox {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    #mainBody {
+        margin-top: 25%;
+    }
+
+    #atLogo {
+        margin-top: -10%;
+
+    }
+
+    .link {
+        display: none;
+    }
+
+    .navbar {
+        height: 20px;
+    }
+
+    .bgheader {
+        height: 90px;
+    }
+
+    .glossaryBox {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+    #mainBody {
+        margin-top: 25%;
+    }
+
+    #atLogo {
+        margin-top: -10%;
+
+    }
+
+    .logo {
+        font-size: 25px;
+        margin-top: 2%;
+    }
+
+    .link {
+        display: none;
+    }
+
+    .navbar {
+        height: 20px;
+    }
+
+    .bgheader {
+        height: 90px;
+    }
+
+    .glossaryBox {
+        display: block;
+    }
+
+}
