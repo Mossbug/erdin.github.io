@@ -129,7 +129,8 @@ body {
 }
 
 #confusedCat {
-    margin-left: 40%;
+    margin: auto;
+    display: block;
 }
 
 .glossaryBox {
@@ -232,7 +233,6 @@ body {
         /*margin-top: -10%;*/
     }
 
-
     #mainBody {
         margin-top: 25%;
     }
@@ -261,7 +261,9 @@ body {
     }
 
     #atLogo {
-        margin-top: -3%;
+
+        font-size: 20px;
+
     }
 
     #innerHeader {
@@ -293,8 +295,12 @@ body {
     }
 
     #atLogo {
-        margin-top: -9%;
+        padding-top: 5%;
+    }
 
+    .logo {
+        font-size: 25px;
+        margin-top: 2%;
     }
 
     .link {
@@ -326,6 +332,11 @@ body {
 
     }
 
+    .logo {
+        font-size: 25px;
+        margin-top: 2%;
+    }
+
     .link {
         display: none;
     }
@@ -351,7 +362,7 @@ body {
     }
 
     #atLogo {
-        margin-top: -10%;
+        padding-top: 10%;
 
     }
 
