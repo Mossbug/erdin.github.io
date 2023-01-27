@@ -201,6 +201,21 @@ body {
     transform: scale(2);
 }
 
+#popupX {
+    position: absolute;
+    background: #242d30;
+    height: 5%;
+    width: 5%;
+    top: 4%;
+    right: 4%;
+    transition: transform 500ms ease;
+}
+
+#popupX:hover {
+    transform: scale(1.3);
+}
+
+/*---------------------------------------------------*/
 #reisfeldPopup {
     background: #242d30;
 }
@@ -209,19 +224,56 @@ body {
     background: none;
     left: 82%;
     top: 55%;
-    width: 2%;
-    height: 2.5%;
+    width: 2.5%;
+    height: 3%;
 
+}
+
+/*---------------------------------------------------*/
+
+#elkpethPopup {
+    background: #242d30;
 }
 
 #elkpeth {
     background: none;
     left: 77.2%;
     top: 56%;
-    width: 2%;
-    height: 2.5%;
+    width: 2.5%;
+    height: 3%;
 
 }
+
+/*---------------------------------------------------*/
+
+#erinsgatePopup {
+    background: #242d30;
+}
+
+#erinsgate {
+    background: none;
+    left: 81%;
+    top: 58%;
+    width: 1.5%;
+    height: 2%;
+
+}
+
+/*---------------------------------------------------*/
+
+#kirenPopup {
+    background: #242d30;
+}
+
+#kiren {
+    background: none;
+    left: 80%;
+    top: 54%;
+    width: 1.5%;
+    height: 2%;
+
+}
+
 
 
 /* If mobile screen --------------*/
@@ -239,14 +291,6 @@ body {
 
 }
 
-#popupX {
-    position: absolute;
-    background: #242d30;
-    height: 5%;
-    width: 5%;
-    top: 4%;
-    right: 4%;
-}
 
 .openedSidebar {
     right: 0px;
