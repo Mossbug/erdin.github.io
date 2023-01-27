@@ -99,8 +99,9 @@ body {
 
 /* BODY ------------------------------------------------------------*/
 
+
+
 #map {
-    margin-top: 15%;
     width: 100%;
     height: 100%;
 }
@@ -137,10 +138,6 @@ body {
     display: flex;
     align-items: center;
     flex-flow: row nowrap;
-
-
-
-
 }
 
 .ATGlossaryChoice {
@@ -155,13 +152,75 @@ body {
 }
 
 .glossaryImage {
-
     width: 75%;
     height: 75%;
 }
 
 .gone {
     display: none;
+}
+
+/* map stuff * -----------------------------------------------*/
+#infoPopup {
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background: #242d30;
+    z-index: 1;
+    margin-left: 15%;
+    margin-top: 35%;
+    border-radius: 2%;
+}
+
+.popupText {
+    font-size: 15px;
+    font-family: Roboto-Thin;
+    color: white;
+    text-align: center;
+    margin: 5%;
+    background: #242d30;
+}
+
+.popupTextTitle {
+    font-size: 25px;
+    font-family: Roboto-Thin;
+    color: white;
+    text-align: center;
+    margin: 5%;
+    background: #242d30;
+}
+
+.mapIcon {
+    position: absolute;
+    z-index: 1;
+    transition: transform 500ms ease;
+    background: none;
+}
+
+.mapIcon:hover {
+    transform: scale(2);
+}
+
+#reisfeldPopup {
+    background: #242d30;
+}
+
+#reisfeld {
+    background: none;
+    left: 82%;
+    top: 55%;
+    width: 2%;
+    height: 2.5%;
+
+}
+
+#elkpeth {
+    background: none;
+    left: 77.2%;
+    top: 56%;
+    width: 2%;
+    height: 2.5%;
+
 }
 
 
@@ -178,6 +237,15 @@ body {
 
     transition: transform 0.4s,
 
+}
+
+#popupX {
+    position: absolute;
+    background: #242d30;
+    height: 5%;
+    width: 5%;
+    top: 4%;
+    right: 4%;
 }
 
 .openedSidebar {
@@ -223,6 +291,13 @@ body {
 
         /*margin-top: -10%;*/
     }
+
+    #map {
+        padding-top: 5%;
+    }
+
+
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -238,17 +313,15 @@ body {
     }
 
     .glossaryBox {
-        display: block;
-        margin: 20%;
+        position: absolute;
+        left: 10%;
+        flex-direction: column;
+        justify-content: center;
     }
-
-    .ATGlossaryChoice {
-        margin: 10%;
-    }
-
 
     .glossaryImage {
-
+        margin-top: 5%;
+        margin-bottom: 5%;
         width: 75%;
         height: 75%;
     }
@@ -260,10 +333,11 @@ body {
         margin-top: 25%;
     }
 
+
     #atLogo {
 
         font-size: 20px;
-
+        margin-top: -5%
     }
 
     #innerHeader {
@@ -282,8 +356,8 @@ body {
         height: 90px;
     }
 
-    .glossaryBox {
-        display: block;
+    .navShader {
+        margin-top: 12%;
     }
 
 }
@@ -293,6 +367,7 @@ body {
     #mainBody {
         margin-top: 25%;
     }
+
 
     #atLogo {
         padding-top: 5%;
@@ -315,10 +390,9 @@ body {
         height: 90px;
     }
 
-    .glossaryBox {
-        display: block;
+    .navShader {
+        margin-top: 13%;
     }
-
 }
 
 @media only screen and (max-width: 500px) {
@@ -332,6 +406,7 @@ body {
 
     }
 
+
     .logo {
         font-size: 25px;
         margin-top: 2%;
@@ -349,10 +424,9 @@ body {
         height: 90px;
     }
 
-    .glossaryBox {
-        display: block;
+    .navShader {
+        margin-top: 13%;
     }
-
 }
 
 @media only screen and (max-width: 400px) {
@@ -366,6 +440,7 @@ body {
 
     }
 
+
     .logo {
         font-size: 25px;
         margin-top: 2%;
@@ -383,8 +458,7 @@ body {
         height: 90px;
     }
 
-    .glossaryBox {
-        display: block;
+    .navShader {
+        margin-top: 13%;
     }
-
 }
