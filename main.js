@@ -2,24 +2,15 @@
 
 let bars = document.getElementById("bars");
 let exit = document.getElementById("exit");
-let sidebar = document.getElementById("sidebar");
-let openedSidebar = document.getElementsByClassName("openedSidebar");
-let popup = document.getElementById("infoPopup");
-let reisfeldPopup = document.getElementById("reisfeldPopup");
-let elkpethPopup = document.getElementById("elkpethPopup");
-let erinsgatePopup = document.getElementById("erinsgatePopup");
-let kirenPopup = document.getElementById("kirenPopup");
+let characterCLick = document.getElementById("characterBase");
 
-kirenPopup.classList.add("gone")
-erinsgatePopup.classList.add("gone")
-elkpethPopup.classList.add("gone")
-reisfeldPopup.classList.add("gone")
-popup.classList.add("gone");
 exit.classList.add("gone");
+
+
+
 
 //mobile nav sidebar stuff -------------------------------------
 function openSidebar() {
-    console.log("open sidebar triggered")
     sidebar.classList.add("openedSidebar");
     bars.classList.add("gone");
     exit.classList.remove("gone");
@@ -31,34 +22,35 @@ function closeSidebar() {
     bars.classList.remove("gone");
 }
 
-// Map popup stuff ----------------------------------------------
-/*adding a new popup description for a location: make sure to add it to the closeMapPopup function, and create
- it's own open function so that it doesn't mess up any other popups*/
-function closeMapPopup() {
-    popup.classList.add("gone");
-    elkpethPopup.classList.add("gone")
-    reisfeldPopup.classList.add("gone")
-    erinsgatePopup.classList.add("gone")
-    kirenPopup.classList.add("gone")
-}
+function gauntletRedirect() {
+    var gauntletCode = document.getElementById('gauntletCode').value;
+    if (gauntletCode == "val") {
+        //When launching on github, replace with this line: 'https://mossbug.github.io/erdin.github.io/val.html'
+        location.replace('file:///C:/Users/Chris/Desktop/ErdinLanding/val.html')
+    }
 
-function openReisfeldPopup() {
-    popup.classList.remove("gone");
-    reisfeldPopup.classList.remove("gone")
-}
+    var gauntletCode = document.getElementById('gauntletCode').value;
+    if (gauntletCode == "germaine") {
+        //When launching on github, replace with this line: 'https://mossbug.github.io/erdin.github.io/germaine.html'
+        location.replace('file:///C:/Users/Chris/Desktop/ErdinLanding/germaine.html')
+    }
 
-function openElkpethPopup() {
-    popup.classList.remove("gone");
-    elkpethPopup.classList.remove("gone")
-}
+    var gauntletCode = document.getElementById('gauntletCode').value;
+    if (gauntletCode == "cadenza") {
+        //When launching on github, replace with this line: 'https://mossbug.github.io/erdin.github.io/cadenza.html'
+        location.replace('file:///C:/Users/Chris/Desktop/ErdinLanding/cadenza.html')
+    }
 
-function openErinsgatePopup() {
-    popup.classList.remove("gone");
-    erinsgatePopup.classList.remove("gone")
-}
+    var gauntletCode = document.getElementById('gauntletCode').value;
+    if (gauntletCode == "shevaria") {
+        //When launching on github, replace with this line: 'https://mossbug.github.io/erdin.github.io/shevaria.html'
+        location.replace('file:///C:/Users/Chris/Desktop/ErdinLanding/shevaria.html')
+    }
 
-function openKirenPopup() {
-    popup.classList.remove("gone");
-    kirenPopup.classList.remove("gone")
+    var gauntletCode = document.getElementById('gauntletCode').value;
+    if (gauntletCode == "esic") {
+        //When launching on github, replace with this line: 'https://mossbug.github.io/erdin.github.io/esic.html'
+        location.replace('file:///C:/Users/Chris/Desktop/ErdinLanding/esic.html')
+    }
 }
 
