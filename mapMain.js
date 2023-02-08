@@ -27,21 +27,49 @@ function closeMapPopup() {
 }
 
 function openReisfeldPopup() {
+    popup.classList.add("gone");
+    elkpethPopup.classList.add("gone")
+    reisfeldPopup.classList.add("gone")
+    erinsgatePopup.classList.add("gone")
+    kirenPopup.classList.add("gone")
+    //ABOVE SECTION CLEARS ALL (should be the same as the closeMapPopup Function)
+
     popup.classList.remove("gone");
     reisfeldPopup.classList.remove("gone")
 }
 
 function openElkpethPopup() {
+    popup.classList.add("gone");
+    elkpethPopup.classList.add("gone")
+    reisfeldPopup.classList.add("gone")
+    erinsgatePopup.classList.add("gone")
+    kirenPopup.classList.add("gone")
+    //ABOVE SECTION CLEARS ALL (should be the same as the closeMapPopup Function)
+
     popup.classList.remove("gone");
     elkpethPopup.classList.remove("gone")
 }
 
 function openErinsgatePopup() {
+    popup.classList.add("gone");
+    elkpethPopup.classList.add("gone")
+    reisfeldPopup.classList.add("gone")
+    erinsgatePopup.classList.add("gone")
+    kirenPopup.classList.add("gone")
+    //ABOVE SECTION CLEARS ALL (should be the same as the closeMapPopup Function)
+
     popup.classList.remove("gone");
     erinsgatePopup.classList.remove("gone")
 }
 
 function openKirenPopup() {
+    popup.classList.add("gone");
+    elkpethPopup.classList.add("gone")
+    reisfeldPopup.classList.add("gone")
+    erinsgatePopup.classList.add("gone")
+    kirenPopup.classList.add("gone")
+    //ABOVE SECTION CLEARS ALL (should be the same as the closeMapPopup Function)
+
     popup.classList.remove("gone");
     kirenPopup.classList.remove("gone")
 }
