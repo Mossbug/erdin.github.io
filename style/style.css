@@ -276,9 +276,68 @@ body {
 
 }
 
+/* Gauntlet account stuff * -----------------------------------------------*/
+#gauntletCode {
+
+    font-family: colorbasics;
+    font-size: 40px;
+    color: rgb(255, 255, 166);
+    position: absolute;
+    background: none;
+    border-color: rgb(255, 255, 166);
+    text-align: center;
+    border-radius: 10%;
+    width: 30%;
+    height: 10%;
+    top: 40%;
+    right: 35%;
+}
+
+#gauntletCode::placeholder {
+    color: rgb(255, 255, 166);
+}
+
+#gauntletCode:focus {
+    border-color: rgb(255, 0, 0);
+    outline: none;
+}
 
 
-/* If mobile screen --------------*/
+.gauntletCodeEnter {
+    font-family: roboto-thin;
+    color: rgb(255, 255, 166);
+    position: absolute;
+    top: 55%;
+    right: 45%;
+    background: none;
+    border-color: rgb(255, 255, 166);
+    text-align: center;
+    border-radius: 10%;
+    width: 10%;
+    height: 3%;
+}
+
+.gauntletCodeEnter:hover {
+    border-color: rgb(255, 0, 0);
+}
+
+.gauntletScreen {
+    margin-top: -4%;
+    width: 100%;
+    height: 100%;
+}
+
+#testText {
+    font-size: 20px;
+    background: none;
+    font-family: colorbasics;
+    position: absolute;
+    right: 35%;
+    top: 35%;
+}
+
+
+/* If mobile screen -------------------------------------------------------*/
 
 #sidebar {
     background: white;
@@ -410,6 +469,31 @@ body {
     .navShader {
         margin-top: 9%;
     }
+
+
+    #gauntletCode {
+        font-size: 15px;
+        width: 40%;
+        height: 20%;
+        right: 25%;
+        top: 30%;
+    }
+
+    .gauntletCodeEnter {
+        font-size: 10px;
+        top: 55%;
+        right: 36.5%;
+        width: 18%;
+        height: 8%;
+    }
+
+    .gauntletScreen {
+
+        margin-left: 10%;
+        margin-top: -8%;
+        width: 85%;
+        height: 85%;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -445,6 +529,17 @@ body {
     .navShader {
         margin-top: 12%;
     }
+
+    /*THIS ABSOLUTELY FUCKS THE WHOLE PASSWORD PAGE :'(
+    .gauntletScreen {
+        position: absolute;
+        right: -50%;
+        top: 60%;
+        transform: rotate(90deg);
+        width: 200%;
+        height: 60%;
+    }
+*/
 
 }
 
