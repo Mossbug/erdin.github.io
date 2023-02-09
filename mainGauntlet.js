@@ -1,7 +1,7 @@
 
 function gauntletRedirect() {
     var gauntletCode = document.getElementById('gauntletCode').value;
-    if (gauntletCode == "val") {
+    if (gauntletCode == "cyrus1111") {
         //When launching on github, replace with this line: 'https://mossbug.github.io/erdin.github.io/val.html'
         location.replace('https://mossbug.github.io/erdin.github.io/val.html')
     }
