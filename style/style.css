@@ -226,7 +226,7 @@ body {
 #reisfeld {
     background: none;
     left: 82%;
-    top: 55%;
+    top: 51%;
     width: 2.5%;
     height: 3%;
 
@@ -241,7 +241,7 @@ body {
 #elkpeth {
     background: none;
     left: 77.2%;
-    top: 56%;
+    top: 52%;
     width: 2.5%;
     height: 3%;
 
@@ -256,7 +256,7 @@ body {
 #erinsgate {
     background: none;
     left: 81%;
-    top: 58%;
+    top: 54%;
     width: 1.5%;
     height: 2%;
 
@@ -271,7 +271,7 @@ body {
 #kiren {
     background: none;
     left: 80%;
-    top: 55%;
+    top: 51%;
     width: 1.5%;
     height: 2%;
 
@@ -488,6 +488,86 @@ body {
 
 #cadNavShader {
     background: rgb(19, 16, 15);
+
+}
+
+/*Esic*/
+
+#esicBody {
+    background-color: #fff8e5;
+}
+
+#esicLogo {
+    color: #f5c946;
+}
+
+#esicNav {
+    background-color: #533818;
+}
+
+#esicLink {
+    background: none;
+    color: #ff9800;
+
+}
+
+#esicLink:hover {
+    color: #fee18b;
+
+}
+
+#esicText {
+    font-size: 20px;
+    background: none;
+    font-family: colorbasics;
+    position: absolute;
+    right: 35%;
+    top: 35%;
+    color: #f5c946;
+}
+
+#esicNavShader {
+    background: #533818;
+
+}
+
+/*Germaine*/
+
+#gerBody {
+    background-color: #e1c5d5;
+}
+
+#gerLogo {
+    color: #301a25;
+}
+
+#gerNav {
+    background-color: #4c1a36;
+}
+
+#gerLink {
+    background: none;
+    color: #7a3155;
+
+}
+
+#gerLink:hover {
+    color: #964b70;
+
+}
+
+#gerText {
+    font-size: 20px;
+    background: none;
+    font-family: colorbasics;
+    position: absolute;
+    right: 35%;
+    top: 35%;
+    color: #f5c946;
+}
+
+#gerNavShader {
+    background: #4c1a36;
 
 }
 
