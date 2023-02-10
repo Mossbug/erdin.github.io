@@ -382,12 +382,12 @@ body {
 }
 
 #valNav {
-    background-color: rgb(19, 16, 15);
+    background-color: rgb(54, 36, 30);
 }
 
 #valLink {
     background: none;
-    color: #462529;
+    color: #5a3237;
 
 }
 
@@ -404,6 +404,91 @@ body {
     right: 35%;
     top: 35%;
     color: #cb4154;
+}
+
+#valNavShader {
+    background: rgb(19, 16, 15);
+
+}
+
+/* Shevaria */
+
+#shevaBody {
+    background-color: #252546;
+}
+
+#shevaLogo {
+    color: #02ffb7;
+}
+
+#shevaNav {
+    background-color: #252546;
+}
+
+#shevaLink {
+    background: none;
+    color: #565685;
+
+}
+
+#shevaLink:hover {
+    color: #7bd4bc;
+
+}
+
+#shevaText {
+    font-size: 20px;
+    background: none;
+    font-family: colorbasics;
+    position: absolute;
+    right: 35%;
+    top: 35%;
+    color: #02ffb7;
+}
+
+#shevaNavShader {
+    background: rgb(19, 16, 15);
+
+}
+
+/* CadenzA */
+
+#cadBody {
+    background-color: #46252e;
+}
+
+#cadLogo {
+    color: #ff7aa0;
+}
+
+#cadNav {
+    background-color: #723c4a;
+}
+
+#cadLink {
+    background: none;
+    color: #bc4265;
+
+}
+
+#cadLink:hover {
+    color: #e16487;
+
+}
+
+#cadText {
+    font-size: 20px;
+    background: none;
+    font-family: colorbasics;
+    position: absolute;
+    right: 35%;
+    top: 35%;
+    color: #c73760;
+}
+
+#cadNavShader {
+    background: rgb(19, 16, 15);
+
 }
 
 
@@ -534,6 +619,7 @@ body {
 
     .bgheader {
         height: 90px;
+        width: 120%;
     }
 
     .navShader {
@@ -542,7 +628,7 @@ body {
 
 
     #gauntletCode {
-        font-size: 30px;
+        font-size: 10px;
         width: 40%;
         height: 5%;
         right: 31%;
@@ -550,7 +636,7 @@ body {
     }
 
     .gauntletCodeEnter {
-        font-size: 20px;
+        font-size: 10px;
         top: 40%;
         right: 43%;
         width: 18%;
@@ -561,16 +647,16 @@ body {
 
         margin-left: 10%;
         margin-top: -8%;
-        width: 85%;
-        height: 85%;
+        width: 75%;
+        height: 75%;
     }
 
     .gauntletBox {
         position: absolute;
-        left: 5%;
-        top: -10%;
-        width: 100%;
-        height: 100%;
+        left: 18%;
+        top: 15%;
+        width: 60%;
+        height: 60%;
         display: flex;
         align-items: center;
         flex-flow: row nowrap;
@@ -579,9 +665,11 @@ body {
     }
 
     .gauntletImage {
-        width: 90%;
+        width: 95%;
         height: 90%;
     }
+
+
 
 }
 
@@ -632,6 +720,7 @@ body {
 
     .gauntletScreenMobile {
         display: block;
+        width: 100%;
 
     }
 
@@ -639,11 +728,6 @@ body {
         display: none;
     }
 
-
-
-    #navShaderPassPage {
-        margin-top: 4%
-    }
 
 }
 
@@ -677,10 +761,6 @@ body {
 
     .navShader {
         margin-top: 13%;
-    }
-
-    #navShaderPassPage {
-        margin-top: 2%
     }
 }
 
@@ -732,7 +812,7 @@ body {
 
     .logo {
         font-size: 25px;
-        margin-top: 2%;
+        margin-top: 0%;
     }
 
     .link {
@@ -751,7 +831,5 @@ body {
         margin-top: 13%;
     }
 
-    #navShaderPassPage {
-        margin-top: 0%
-    }
+
 }
