@@ -6,6 +6,7 @@ let reisfeldPopup = document.getElementById("reisfeldPopup");
 let elkpethPopup = document.getElementById("elkpethPopup");
 let erinsgatePopup = document.getElementById("erinsgatePopup");
 let kirenPopup = document.getElementById("kirenPopup");
+let wolfwaterPopup = document.getElementById("wolfwaterPopup");
 
 
 
@@ -14,6 +15,7 @@ kirenPopup.classList.add("gone");
 erinsgatePopup.classList.add("gone");
 elkpethPopup.classList.add("gone");
 reisfeldPopup.classList.add("gone");
+wolfwaterPopup.classList.add("gone");
 
 // Map popup stuff ----------------------------------------------
 /*adding a new popup description for a location: make sure to add it to the closeMapPopup function, and create
@@ -24,6 +26,7 @@ function closeMapPopup() {
     reisfeldPopup.classList.add("gone")
     erinsgatePopup.classList.add("gone")
     kirenPopup.classList.add("gone")
+    wolfwaterPopup.classList.add("gone");
 }
 
 function openReisfeldPopup() {
@@ -32,6 +35,7 @@ function openReisfeldPopup() {
     reisfeldPopup.classList.add("gone")
     erinsgatePopup.classList.add("gone")
     kirenPopup.classList.add("gone")
+    wolfwaterPopup.classList.add("gone");
     //ABOVE SECTION CLEARS ALL (should be the same as the closeMapPopup Function)
 
     popup.classList.remove("gone");
@@ -44,6 +48,7 @@ function openElkpethPopup() {
     reisfeldPopup.classList.add("gone")
     erinsgatePopup.classList.add("gone")
     kirenPopup.classList.add("gone")
+    wolfwaterPopup.classList.add("gone");
     //ABOVE SECTION CLEARS ALL (should be the same as the closeMapPopup Function)
 
     popup.classList.remove("gone");
@@ -56,20 +61,24 @@ function openErinsgatePopup() {
     reisfeldPopup.classList.add("gone")
     erinsgatePopup.classList.add("gone")
     kirenPopup.classList.add("gone")
+    wolfwaterPopup.classList.add("gone");
     //ABOVE SECTION CLEARS ALL (should be the same as the closeMapPopup Function)
 
     popup.classList.remove("gone");
     erinsgatePopup.classList.remove("gone")
 }
 
-function openKirenPopup() {
+function openWolfwaterPopup() {
     popup.classList.add("gone");
     elkpethPopup.classList.add("gone")
     reisfeldPopup.classList.add("gone")
     erinsgatePopup.classList.add("gone")
     kirenPopup.classList.add("gone")
+    wolfwaterPopup.classList.add("gone");
     //ABOVE SECTION CLEARS ALL (should be the same as the closeMapPopup Function)
 
     popup.classList.remove("gone");
-    kirenPopup.classList.remove("gone")
+    wolfWaterPopup.classList.remove("gone")
 }
+
+
