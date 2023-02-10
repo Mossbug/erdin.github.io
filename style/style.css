@@ -277,6 +277,21 @@ body {
 
 }
 
+/*---------------------------------------------------*/
+
+#wolfwaterPopup {
+    background: #242d30;
+}
+
+#wolfwater {
+    background: none;
+    left: 83%;
+    top: 47.5%;
+    width: 4%;
+    height: 4.5%;
+
+}
+
 /* Gauntlet account stuff * -----------------------------------------------*/
 
 /*General*/
