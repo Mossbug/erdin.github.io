@@ -2,33 +2,33 @@
 <html>
 
 <head>
-    <title>Glossary</title>
+    <title>Esic</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
-    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, maximum-scale=1, user-scalable=0">
 </head>
 
-<body>
-    <div class="navShader"></div>
+<body id="esicBody">
+    <div class="navShader" id="esicNavShader"></div>
     </div>
     <!--HEADER-->
     <div class="totalHeader">
         <div id="innerHeader">
-            <img src="style/images/bgcity2.jpg" class="bgheader">
+            <img src="style/images/esicBg.png" class="bgheader">
 
             <div class="header">
-                <p class="logo">ESIC</p>
+                <p class="logo" id="esicLogo">ESIC</p>
                 <img src="style/images/bars.png" Id="bars" class="sidebarClick" onclick="openSidebar()">
                 <img src="style/images/x.png" Id="exit" class="sidebarClick" onclick="closeSidebar()">
             </div>
         </div>
         <!-- Navbar here -->
-        <div class="navbar">
-            <a href="index.html" class="link">Home</a>
-            <a href="artificersTimepiece.html" class="link">artificers-timepiece</a>
-            <a href="map.html" class="link">map</a>
-            <a href="worldLore.html" class="link">world-lore</a>
-            <a href="glossary.html" class="link">glossary</a>
-            <a href="ttrpg.html" class="link">ttrpg</a>
+        <div class="navbar" id="esicNav">
+            <a href="index.html" class="link" id="esicLink">Home</a>
+            <a href="artificersTimepiece.html" class="link" id="esicLink">artificers-timepiece</a>
+            <a href="map.html" class="link" id="esicLink">map</a>
+            <a href="worldLore.html" class="link" id="esicLink">world-lore</a>
+            <a href="glossary.html" class="link" id="esicLink">glossary</a>
+            <a href="ttrpg.html" class="link" id="esicLink">ttrpg</a>
         </div>
     </div>
 
@@ -62,11 +62,14 @@
 
     <!-- main body -->
     <div id="mainBody">
-        <p class="bodyText" id="testText">Esic's Secret Info here
-            <br>
-            more coming soon
-        </p>
-        <img src="style/images/gauntletScreenBasic.png" class="gauntletScreen">
+        <div class="gauntletBox">
+            <a class="gauntletElement"><img src="style/images/contactEsic.png" class="gauntletImage"> </a>
+            <a class="gauntletElement"><img src="style/images/questsEsic.png" class="gauntletImage"> </a>
+            <a class="gauntletElement"><img src="style/images/worldNewsEsic.png" class="gauntletImage"> </a>
+        </div>
+        <img src="style/images/gauntletScreenEsic.png" class="gauntletScreen">
+        <img src="style/images/gauntletScreenEsicMobile.png" class="gauntletScreenMobile">
+
     </div>
 
 
