@@ -2,33 +2,33 @@
 <html>
 
 <head>
-    <title>Glossary</title>
+    <title>Shevaria</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
-    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0, maximum-scale=1, user-scalable=0">
 </head>
 
-<body>
-    <div class="navShader"></div>
+<body id="shevaBody">
+    <div class="navShader" id="shevaNavShader"></div>
     </div>
     <!--HEADER-->
     <div class="totalHeader">
         <div id="innerHeader">
-            <img src="style/images/bgcity2.jpg" class="bgheader">
+            <img src="style/images/shevaBg.png" class="bgheader">
 
             <div class="header">
-                <p class="logo">SHEVARIA</p>
+                <p class="logo" id="shevaLogo">SHEVARIA</p>
                 <img src="style/images/bars.png" Id="bars" class="sidebarClick" onclick="openSidebar()">
                 <img src="style/images/x.png" Id="exit" class="sidebarClick" onclick="closeSidebar()">
             </div>
         </div>
         <!-- Navbar here -->
-        <div class="navbar">
-            <a href="index.html" class="link">Home</a>
-            <a href="artificersTimepiece.html" class="link">artificers-timepiece</a>
-            <a href="map.html" class="link">map</a>
-            <a href="worldLore.html" class="link">world-lore</a>
-            <a href="glossary.html" class="link">glossary</a>
-            <a href="ttrpg.html" class="link">ttrpg</a>
+        <div class="navbar" id="shevaNav">
+            <a href="index.html" class="link" id="shevaLink">Home</a>
+            <a href="artificersTimepiece.html" class="link" id="shevaLink">artificers-timepiece</a>
+            <a href="map.html" class="link" id="shevaLink">map</a>
+            <a href="worldLore.html" class="link" id="shevaLink">world-lore</a>
+            <a href="glossary.html" class="link" id="shevaLink">glossary</a>
+            <a href="ttrpg.html" class="link" id="shevaLink">ttrpg</a>
         </div>
     </div>
 
@@ -62,11 +62,14 @@
 
     <!-- main body -->
     <div id="mainBody">
-        <p class="bodyText" id="testText">Shevaria's Secret Info here
-            <br>
-            more coming soon
-        </p>
-        <img src="style/images/gauntletScreenBasic.png" class="gauntletScreen">
+        <div class="gauntletBox">
+            <a class="gauntletElement"><img src="style/images/contactSheva.png" class="gauntletImage"> </a>
+            <a class="gauntletElement"><img src="style/images/questsSheva.png" class="gauntletImage"> </a>
+            <a class="gauntletElement"><img src="style/images/worldNewsSheva.png" class="gauntletImage"> </a>
+        </div>
+        <img src="style/images/gauntletScreenSheva.png" class="gauntletScreen">
+        <img src="style/images/gauntletScreenShevaMobile.png" class="gauntletScreenMobile">
+
     </div>
 
 
