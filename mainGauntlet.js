@@ -25,7 +25,7 @@ function gauntletRedirect() {
     }
 
     var gauntletCode = document.getElementById('gauntletCode').value;
-    if (gauntletCode == "esic") {
+    if (gauntletCode == "kore") {
         //When launching on github, replace with this line: 'https://mossbug.github.io/erdin.github.io/esic.html'
         location.replace('https://mossbug.github.io/erdin.github.io/esic.html')
     }
@@ -63,7 +63,7 @@ document.getElementById("gauntletCode").addEventListener("keydown", function (e)
         }
 
 
-        else if (gauntletCode == "esic") {
+        else if (gauntletCode == "kore") {
             var gauntletCode = document.getElementById('gauntletCode').value;
             //When launching on github, replace with this line: 'https://mossbug.github.io/erdin.github.io/esic.html'
             location.replace('https://mossbug.github.io/erdin.github.io/esic.html');
