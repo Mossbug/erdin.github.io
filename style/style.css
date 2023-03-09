@@ -14,8 +14,13 @@
     src: url(Roboto-Thin.ttf);
 }
 
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(Roboto-Regular.ttf);
+}
+
 body {
-    background: #324247;
+    background: #1f1f18;
     height: 9000px;
     margin: 0;
 
@@ -29,7 +34,7 @@ body {
 
     font-family: colorbasics;
     text-decoration: none;
-    background: #df866e;
+    background: #5a6554;
     height: 30px;
     z-index: 2;
 
@@ -41,34 +46,34 @@ body {
     left: -2%;
     width: 120%;
     height: 7%;
-    background: #242d30;
+    background: #0f0f0c;
     transform-origin: left;
     z-index: 2;
     filter: blur(10px);
 }
 
 .link {
-    color: #222e31;
+    color: #3b4038;
     text-decoration: none;
-    background: #df866e;
+    background: #5a6554;
 }
 
 .link:hover {
-    color: #227a90;
+    color: #95a78b;
     background: #ffffff;
 
 }
 
 .bgheader {
     margin-bottom: -0.4%;
-    height: 130px;
+    height: 18vh;
     width: 100%;
 }
 
 .logo {
     position: absolute;
     font-family: colorbasics;
-    color: #e9b6a8;
+    color: #c2cdaa;
     font-size: 50px;
     margin-bottom: -4%;
     margin-top: -2%;
@@ -160,6 +165,67 @@ body {
 .gone {
     display: none;
 }
+
+/* GLOSSARY ITEMS HERE -----------------------------------------------------------------------*/
+
+li {
+    list-style-type: none;
+}
+
+#glossaryBody>ul>li {
+    list-style-type: none;
+}
+
+ul>li>p.listHead {
+    font-family: Roboto-Thin;
+    Color: rgb(247, 193, 147);
+    text-align: left;
+}
+
+.listItem {
+    font-family: Roboto-Thin;
+    color: rgb(250, 230, 209);
+    margin-left: 3%;
+    text-align: left;
+}
+
+#letterContainer {
+    position: fixed;
+    z-index: 10;
+    top: 22vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 30px;
+
+
+}
+
+.letter {
+    width: 50px;
+    height: 30px;
+    font-family: Roboto-Regular;
+    Color: #95a78b;
+    background-color: #1f1f18;
+    border-color: #95a78b;
+}
+
+.letterWrapper #listContainer {
+    width: 80%;
+}
+
+.glossaryLetter {
+    font-family: Roboto-Regular;
+    Color: #95a78b;
+    font-size: 20px;
+}
+
+
+
+
+
 
 /* map stuff * -----------------------------------------------*/
 
@@ -287,8 +353,8 @@ body {
     background: none;
     left: 83%;
     top: 47.5%;
-    width: 4%;
-    height: 4.5%;
+    width: 3.5%;
+    height: 4%;
 
 }
 
@@ -341,6 +407,7 @@ body {
 
 .gauntletScreen {
     margin-top: -5%;
+    margin-left: 3%;
     width: 100%;
     height: 100%;
 }
@@ -628,7 +695,7 @@ body {
 }
 
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 800px) {
     .sidebarClick {
         display: none;
     }
@@ -636,6 +703,10 @@ body {
 
 @media only screen and (max-width: 1000px) {
 
+
+    .glossaryMainBody {
+        margin-left: 10%;
+    }
 
     #mainBody {
         margin-top: 20%;
@@ -648,31 +719,59 @@ body {
         /*margin-top: -10%;*/
     }
 
-    #map {
-        padding-top: 5%;
-    }
-
-    #kiren {
-        top: 56%;
-    }
-
-    #erinsgate {
-        top: 60%;
-    }
-
-    #reisfeld {
-        top: 57%;
-    }
-
-    #elkpeth {
-        top: 58%
-    }
 
 
 
 }
 
 @media only screen and (max-width: 800px) {
+
+    #map {
+        padding-top: 5%;
+    }
+
+    #kiren {
+        top: 48%;
+    }
+
+    #erinsgate {
+        top: 51%;
+    }
+
+    #reisfeld {
+        top: 48%;
+    }
+
+    #elkpeth {
+        top: 49%
+    }
+
+    #wolfwater {
+        top: 45%;
+    }
+
+    .letter {
+        width: 100%;
+        height: 100%;
+    }
+
+    #letterContainer {
+        position: fixed;
+        z-index: 10;
+        left: 0px;
+        top: 12vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+        width: 50px;
+        height: 88vh;
+    }
+
+    .letterWrapper {
+        width: 50px;
+        height: 100%;
+    }
 
     .logo {
         font-size: 40px;
@@ -709,11 +808,11 @@ body {
     }
 
     .navbar {
-        height: 20px;
+        height: 40%;
     }
 
     .bgheader {
-        height: 90px;
+        height: 12vh;
         width: 120%;
     }
 
@@ -764,6 +863,16 @@ body {
         height: 90%;
     }
 
+    .gauntletScreenMobile {
+        display: block;
+        width: 100%;
+
+    }
+
+    .gauntletScreen {
+        display: none;
+    }
+
 
 
 }
@@ -790,37 +899,8 @@ body {
         display: none;
     }
 
-    .navbar {
-        height: 20px;
-    }
-
-    .bgheader {
-        height: 90px;
-    }
-
     .navShader {
         margin-top: 12%;
-    }
-
-    /*THIS ABSOLUTELY FUCKS THE WHOLE PASSWORD PAGE :'(
-    .gauntletScreen {
-        position: absolute;
-        right: -50%;
-        top: 60%;
-        transform: rotate(90deg);
-        width: 200%;
-        height: 60%;
-    }
-*/
-
-    .gauntletScreenMobile {
-        display: block;
-        width: 100%;
-
-    }
-
-    .gauntletScreen {
-        display: none;
     }
 
 
@@ -844,14 +924,6 @@ body {
 
     .link {
         display: none;
-    }
-
-    .navbar {
-        height: 20px;
-    }
-
-    .bgheader {
-        height: 90px;
     }
 
     .navShader {
@@ -880,13 +952,6 @@ body {
         display: none;
     }
 
-    .navbar {
-        height: 20px;
-    }
-
-    .bgheader {
-        height: 90px;
-    }
 
     .navShader {
         margin-top: 13%;
@@ -896,7 +961,7 @@ body {
 @media only screen and (max-width: 400px) {
 
     #mainBody {
-        margin-top: 25%;
+        margin-top: 30%;
     }
 
     #atLogo {
@@ -912,14 +977,6 @@ body {
 
     .link {
         display: none;
-    }
-
-    .navbar {
-        height: 20px;
-    }
-
-    .bgheader {
-        height: 90px;
     }
 
     .navShader {
